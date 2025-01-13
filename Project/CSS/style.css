@@ -1,0 +1,32 @@
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+
+            }
+            a:hover{
+                color: rgba(172, 255, 47, 0.795);
+            }
+            /* a:visited{
+                color: red;
+            } */
+            a:active{
+                color: aqua;
+            }
+            .link {
+                text-align: left;
+                text-decoration: none;
+                color: rgb(255, 195, 117);
+            }
+
+            .txt {
+                color: rgba(255, 255, 255, 0.795);
+                text-align: center;
+                font-size: 22px;
+
+            }
+
+            body {
+                background:rgb(80, 78, 78) ;
+            }

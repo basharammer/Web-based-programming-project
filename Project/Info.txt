@@ -1,0 +1,17 @@
+Project Name: OldSchoolGames
+
+Description: Unleash your creativity and step back in
+		     time with Old School Games! Our platfrom is designed to teach you the art
+		     of  programming retro-style games, blending nostalgia with modern coding 
+		     techniques. Whether you're a beginner or an experienced develpoer, you'll find
+		     resources, tutorials, and community
+	 	     support to craft your own classic gaming experiences
+
+Participants: 1-Bashar Al-Ghazali
+			student's ID:202310930
+
+		      2-Khaleel Al-Qaisieh
+			student's ID: 202310968
+
+		      3-Sa'Ed Altaher
+			 student's ID: 202311396

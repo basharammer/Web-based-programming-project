@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <style>
+        span {
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: rgba(172, 255, 47, 0.795);
+        }
+
+        .top {
+            width: 80%;
+            margin: 0 auto;
+            padding: 50px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white
+        }
+
+        .contact-details {
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .contact-details p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #222;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #333;
+            color: rgba(172, 255, 47, 0.795);
+            font-size: 0.4cm;
+        }
+
+        .contact-form button {
+            padding: 12px 20px;
+            background-color: rgba(172, 255, 47, 0.795);
+            ;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.7cm;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body style="background-color: rgb(80, 78, 78);">
+
+    <nav class="navbar navbar-expand-lg navbar bg-success">
+        <div class="container-fluid">
+            <a class="text-light" style="text-decoration: none;" href="../Home/Home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav text-">
+                    <a class="nav-link active" aria-current="page" href="../Success Stories/Success Stories.html"><span
+                            class="text-light">Success Stories</span></a>
+                    <a class="nav-link " href="../TheCourse/TheCourse.html"><span class="text-light">The
+                            Course</span></a>
+                    <a class="nav-link " href="../Libraries/Libraries.html"><span
+                            class="text-light">Libraries</span></a>
+                    <div class="dropdown">
+                        <button class="btn text-white dropdown-toggle bg-success" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Us
+                        </button>
+                        <ul class="dropdown-menu bg-success">
+                            <li class="dropdown-item text-secondery navbar-brand">Contact Us</li>
+                            <li><a class="dropdown-item text-secondery" href="../About Us/About us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top">
+        <h1 style="border: double;"><span>Contact Us</span></h1>
+
+        <p style="text-align: center;" class="contact-details">
+            <span>We'd love to hear from you! If you have any questions, comments, or concerns, please reach out to
+                us.</span>
+        </p>
+
+    </div>
+
+    <div>
+        <p class="h1" style="text-align: center;"><span>Local Time:</span></p>
+        <p style="text-align: center;"><span id="result"></span></p>
+    </div>
+
+    <script>
+
+        var i = setInterval(getTime, 1000);
+        function getTime() {
+            var d = new Date()
+            document.getElementById("result").innerHTML = d.toLocaleTimeString();
+        }
+
+    </script>
+
+    <div class="contact-form" style="background-color: rgb(137, 133, 133);">
+        <h2><span>Contact Form</span></h2>
+
+        <form action="ThankYou.html" method="post" onsubmit="return validate()">
+            <div class="container" style="background-color: rgb(137, 133, 133);">
+
+
+                <div class="mb-3">
+                    <label for="name" class="form-label"><span>Your Name</span></label>
+                    <input type="text" class="form-control" id="name1">
+                </div>
+
+                <div class="mb-3">
+                    <label for="name" class="form-label"><span>Confirm Your Name</span></label><p id="msgN" style="color: red; font-weight: bold;"></p>
+                    <input type="text" class="form-control" id="name2">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="email1" class="form-label"><span>Email Address</span></label>
+                    <input type="email" class="form-control" id="email1">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="email2" class="form-label"><span>Confirm Email</span></label><p id="msgE" style="color: red; font-weight: bold;"></p>
+                    <input type="email" class="form-control" id="email2">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label"><span>Subject</span></label>
+                    <input type="text" class="form-control" id="subject1" name="subject">
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject" class="form-label"><span>Confirm Subject</span></label><p id="msgS" style="color: red; font-weight: bold;"></p>
+                    <input type="text" class="form-control" id="subject2" name="subject">
+                </div>
+
+
+                <div class="mb-3">
+                    <label for="message" class="form-label"><span>Message</span></label>
+                    <textarea class="form-control" id="message1" name="message" rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label"><span>Confirm Message</span></label>
+                    <textarea class="form-control" id="message2" name="message" rows="3"></textarea><p id="msgM" style="color: red; font-weight: bold;"></p>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary"><span>Submit</span></button>
+                
+        </form>
+    </div>
+    <Script>
+        function validate() {
+            var x = document.getElementById('email1').value;
+            var y = document.getElementById('email2').value;
+
+            var k = document.getElementById('message1').value;
+            var b = document.getElementById('message2').value;
+
+            var a = document.getElementById('name1').value;
+            var c = document.getElementById('name2').value;
+
+            var d = document.getElementById('subject1').value;
+            var f = document.getElementById('subject2').value;
+
+
+
+            if (x == y && k == b && a==c && d==f) {
+                return true;
+            } else {
+                if(x!=y){
+                    document.getElementById('msgE').innerHTML = "make sure they are the same";
+                }
+                if(k!=b){
+                    document.getElementById('msgM').innerHTML = "make sure they are the same";
+                }
+                if(a!=c){
+                    document.getElementById('msgN').innerHTML = "make sure they are the same";
+                }
+                if(d!=f){
+                    document.getElementById('msgS').innerHTML = "make sure they are the same";
+                }
+                return false;
+            }
+
+        }
+    </Script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    </div>
+
+    <div class="footer">
+        <p><span>Thank you for contacting us! We'll get back to you shortly.</span></p>
+        <p><span>Your information will be kept confidential and used only for communication purposes.</span></p>
+    </div>
+</body>
+
+</html>
